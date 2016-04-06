@@ -6,5 +6,10 @@ export default Ember.Component.extend({
     showInformation() {
       this.set('showBundleInformation', true);
     },
+    deleteBundle(bundle) {
+      if(confirm("Are you sure you want to delete this bundle?")) {
+        this.sendAction('deleteBundle', bundle);
+      }
+    }
   }
 });

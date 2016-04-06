@@ -3,9 +3,10 @@
   <div class="container">
     <h2 class="col-sm-10">{{bundle.bundleName}}</h2>
     <h1 class="col-sm-2"> {{bundle.price}}</h1>
-    <h5 class="col-sm-12">{{bundle.description}}</h5>
+    <h4 class="col-sm-12">{{bundle.description}}</h4>
   </div>
-  <img src={{bundle.bundleImage}} alt={{bundle.bundleName}}/> 
+  <img src={{bundle.bundleImage}} alt={{bundle.bundleName}}/>
+  <button class= "btn btn-danger"{{action 'deleteBundle' bundle}}>Delete</button>
 </div>
 {{else}}
 <button {{action 'showInformation'}}>{{bundle.bundleName}}</button>
