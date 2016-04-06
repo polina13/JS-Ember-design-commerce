@@ -1,11 +1,11 @@
 {{#if updateBundleFormShow}}
   <form>
     <label for="bundleName">Name</label>
-    {{input value=bundleName id="bundleName"}}
+    {{input value=bundleName id="bundleName" placeholder=bundle.bundleName}}
     <label for="description">Description</label>
-    {{input value=description id="description"}}
+    {{input value=description id="description" placeholder=bundle.bundleImage}}
     <label for="price">Price</label>
-    {{input value=price id="price"}}
+    {{input value=price id="price" placeholder=bundle.price}}
   <button {{action "updateBundle" bundle}}>Edit</button>
   </form>
 {{else}}

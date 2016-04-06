@@ -1,7 +1,7 @@
 {{#if showBundleInformation}}
 <div class="well">
   <div class="container">
-    <h2 class="col-sm-10">{{bundle.bundleName}}</h2>
+    {{#link-to 'bundle' bundle.id}}<h2 class="col-sm-10">{{bundle.bundleName}}</h2>{{/link-to}}
     <h1 class="col-sm-2"> {{bundle.price}}</h1>
     <h4 class="col-sm-12">{{bundle.description}}</h4>
   </div>
