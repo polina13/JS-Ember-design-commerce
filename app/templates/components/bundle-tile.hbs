@@ -1,0 +1,12 @@
+{{#if showBundleInformation}}
+<div class="well">
+  <div class="container">
+    <h2 class="col-sm-10">{{bundle.bundleName}}</h2>
+    <h1 class="col-sm-2"> {{bundle.price}}</h1>
+    <h5 class="col-sm-12">{{bundle.description}}</h5>
+  </div>
+  <img src={{bundle.bundleImage}} alt={{bundle.bundleName}}/> 
+</div>
+{{else}}
+<button {{action 'showInformation'}}>{{bundle.bundleName}}</button>
+{{/if}}
