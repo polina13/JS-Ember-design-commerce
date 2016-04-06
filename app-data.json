@@ -1,0 +1,17 @@
+{ "bundles": [{
+  "bundleName": "Basic Bundle",
+  "price": "$39",
+  "description": "Logo in web & print formats (PNG and EPS), over a million different design options, preview & share before you pay and 24/7 Customer Service.",
+  "bundleImage":"http://bocadesign.co.uk/mediafiles/uploads/2011/12/responsive-web-design-boca-slide.jpg"
+  }, {
+  "bundleName": "Professional Bundle",
+  "price": "$59",
+  "description": "Logo in web & print formats (PNG and EPS), business card design, letterhead design and 24/7 customer service.",
+  "bundleImage": "http://petapixel.com/assets/uploads/2015/07/Screen-Shot-2015-07-10-at-10.58.18-AM-copy.jpg."
+  }, {
+  "bundleName": "Premium Bundle",
+  "price": "$99",
+  "description": "Branded Presentation, logo in web & print formats (PNG and EPS), business card design, letterhead design, cover images for Facebook, LinkedIn, and Twitter, profile images for Facebook, Twitter, LinkedIn, Instagram, email signature and banner images and 24/7 customer service.",
+  "bundleImage":"https://90degreedesign.com/wp-content/uploads/2016/02/3-website-designs-screens.png"
+  }]
+}

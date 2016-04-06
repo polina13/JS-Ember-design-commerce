@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'design-commerce',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://YOUR-FIREBASE-NAME.firebaseio.com/',
+    firebase: 'https://designcommerce.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -18,6 +18,16 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    
+    contentSecurityPolicy: {
+   'default-src': "'none'",
+   'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com",
+   'font-src': "'self'",
+   'connect-src': "'self' wss://*.firebaseio.com",
+   'img-src': "'self' *",
+   'style-src': "'self' 'unsafe-inline'",
+   'frame-src': "'self' https://*.firebaseio.com"
     }
   };
 
