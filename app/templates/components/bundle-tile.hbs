@@ -7,6 +7,7 @@
   </div>
   <img src={{bundle.bundleImage}} alt={{bundle.bundleName}}/>
   <button class= "btn btn-danger"{{action 'deleteBundle' bundle}}>Delete</button>
+  {{update-bundle updateBundle="updateBundle" bundle=bundle}}
 </div>
 {{else}}
 <button {{action 'showInformation'}}>{{bundle.bundleName}}</button>

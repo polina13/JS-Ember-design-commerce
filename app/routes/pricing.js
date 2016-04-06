@@ -17,6 +17,15 @@ export default Ember.Route.extend({
         return bundle.destroyRecord();
       });
       this.transitionTo('index');
-    }
+    },
+    updateBundle(bundle, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key] !== undefined) {
+          bundle.set(key, params[key]);
+        }
+      });
+      bundle.save();
+      this.transitionTo('pricing');
+      }
   }
 });
