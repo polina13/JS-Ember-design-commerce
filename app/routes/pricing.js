@@ -16,7 +16,7 @@ export default Ember.Route.extend({
       Ember.RSVP.all(product_deletions).then(function() {
         return bundle.destroyRecord();
       });
-      this.transitionTo('index');
+      this.transitionTo('pricing');
     },
     updateBundle(bundle, params) {
       Object.keys(params).forEach(function(key) {
@@ -26,6 +26,11 @@ export default Ember.Route.extend({
       });
       bundle.save();
       this.transitionTo('pricing');
-      }
+    },
+    saveBundle(params) {
+      var newBundle = this.store.createRecord('bundle', params);
+      newBundle.save();
+      this.transitionTo('pricing');
+    }
   }
 });

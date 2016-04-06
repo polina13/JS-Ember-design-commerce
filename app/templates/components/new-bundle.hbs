@@ -1,0 +1,15 @@
+{{#if addNewBundleForm}}
+<form>
+  <label for="bundleName">Name</label>
+  {{input value=bundleName id="bundleName"}}
+  <label for="bundleImage">Image</label>
+  {{input value=bundleImage id="bundleImage"}}
+  <label for="description">Description</label>
+  {{input value=description id="description"}}
+  <label for="price">Price</label>
+  {{input value=price id="price"}}
+  <button {{action 'saveBundle'}}>Save</button>
+</form>
+{{else}}
+  <button {{action 'showForm'}}>New</button>
+{{/if}}

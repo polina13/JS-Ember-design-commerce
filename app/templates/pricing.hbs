@@ -1,3 +1,5 @@
 {{#each model.bundles as |bundle|}}
   {{bundle-tile updateBundle="updateBundle" deleteBundle="deleteBundle" bundle=bundle}}
 {{/each}}
+
+{{new-bundle saveBundle="saveBundle"}}
