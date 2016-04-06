@@ -1,0 +1,18 @@
+{{#if addNewProductForm}}
+<form>
+  <label for="productName">Name</label>
+  {{input value=productName id="productName"}}
+  <label for="description">Description</label>
+  {{input value=description id="description"}}
+
+  {{input value=price type="hidden" id="price"}}
+  <label for="mediaType">Media Type</label>
+  {{input value=mediaType id="mediaType"}}
+
+  {{input value=productImage type="hidden" id="productImage"}}
+
+  <button {{action 'saveProduct'}}>Save</button>
+</form>
+{{else}}
+  <button {{action 'newProductForm'}}>Add Product</button>
+{{/if}}

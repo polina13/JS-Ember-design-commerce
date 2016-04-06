@@ -6,7 +6,7 @@
     {{input value=description id="description" placeholder=bundle.bundleImage}}
     <label for="price">Price</label>
     {{input value=price id="price" placeholder=bundle.price}}
-  <button {{action "updateBundle" bundle}}>Edit</button>
+  <button class="btn btn-success"{{action "updateBundle" bundle}}>Edit</button>
   </form>
 {{else}}
 <button class="btn btn-success" {{action "showForm"}}>Edit</button>

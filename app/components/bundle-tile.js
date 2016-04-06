@@ -13,6 +13,6 @@ export default Ember.Component.extend({
     },
     updateBundle(bundle, params) {
       this.sendAction('updateBundle', bundle, params);
-    }
+    },
   }
 });

@@ -7,7 +7,6 @@ export default Ember.Component.extend({
     showForm() {
       this.set('addNewBundleForm', true);
     },
-
     saveBundle() {
       var params = {
         bundleName: this.get('bundleName'),
