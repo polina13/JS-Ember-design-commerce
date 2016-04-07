@@ -1,4 +1,9 @@
-{{#each shoppingCart.items as |item|}}
-  {{item.productName}} -- {{item.price}}
-{{/each}}
-<h1>I'm the cart</h1>
+<div class="container">
+  <h1>Cart Contents</h1>
+  {{#each shoppingCart.items as |item|}}
+  <li>{{item.productName}} --- {{item.price}}</li>
+  {{/each}}
+</div>
+<div class="container">
+  <h1>${{totalPrice}}</h1>
+</div>
