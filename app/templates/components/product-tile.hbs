@@ -1,0 +1,17 @@
+<div class="well">
+  <div class="container">
+    <div class="row">
+      <h2 class="col-sm-8">{{product.productName}}</h2>
+      <h1 class="col-sm-4">{{product.price}}</h1>
+    </div>
+    <div class="row">
+      <h4 class="col-sm-6">{{product.description}}</h4>
+      <h4 class="col-sm-6">{{product.mediaType}}</h4>
+    </div>
+    <h4 class="col-sm-6">{{product.recommendedProducts}}</h4>
+    <h4 class="col-sm-12">{{product.productImage}}</h4>
+  </div>
+  <button class= "btn btn-danger"{{action 'deleteProduct' product}}>Delete</button>
+    {{update-product updateProduct="updateProduct" product=product}}
+  {{#link-to 'product' product.product.id}} Back {{/link-to}}
+</div>

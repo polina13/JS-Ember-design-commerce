@@ -1,5 +1,5 @@
 {{#each model.products as |product|}}
-  {{product.productName}}
+  {{#link-to 'product' product.id}}{{product.productName}}{{/link-to}}
   {{product.description}}
   {{product.mediaType}}
 {{/each}}

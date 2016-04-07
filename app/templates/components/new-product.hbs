@@ -4,15 +4,16 @@
   {{input value=productName id="productName"}}
   <label for="description">Description</label>
   {{input value=description id="description"}}
-
-  {{input value=price type="hidden" id="price"}}
+  <label for="price">Price</label>
+  {{input value=price id="price"}}
   <label for="mediaType">Media Type</label>
   {{input value=mediaType id="mediaType"}}
-
-  {{input value=productImage type="hidden" id="productImage"}}
+  <label for="productImage">Image</label>
+  {{input value=productImage id="productImage"}}
 
   <button {{action 'saveProduct'}}>Save</button>
 </form>
 {{else}}
   <button {{action 'newProductForm'}}>Add Product</button>
 {{/if}}
+{{#link-to 'pricing'}}Back{{/link-to}}
