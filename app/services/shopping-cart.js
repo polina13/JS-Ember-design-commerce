@@ -2,9 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Service.extend({
   items: [],
-  fullCart: Ember.computed('items', function() {
-    this.get('items.length', 2);
-  }),
+  fullCart: Ember.computed.gte('items.length', 2),
   add(item) {
     if(this.get('fullCart')) {
       alert('The cart is full. Remove an item to add another one.');
