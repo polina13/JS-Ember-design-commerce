@@ -13,6 +13,11 @@
   </div>
   <button class= "btn btn-danger"{{action 'deleteProduct' product}}>Delete</button>
     {{update-product updateProduct="updateProduct" product=product}}
-    <button {{action 'addToCart' product}}>Add to cart</button>
-  {{#link-to 'product' product.product.id}} Back {{/link-to}}
+    {{#if product.inCart}}
+    <button class="btn btn-danger" {{action 'remove' product}}>Remove</button>
+    {{else}}
+    <button class="btn btn-success" {{action 'addToCart' product}}>Add to cart</button>
+    {{/if}}
+
+  {{#link-to 'bundle' product.bundle.id}} Back {{/link-to}}
 </div>

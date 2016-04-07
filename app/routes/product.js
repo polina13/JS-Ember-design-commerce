@@ -9,7 +9,6 @@ export default Ember.Route.extend({
       product.destroyRecord();
       this.transitionTo('pricing');
     },
-
     updateProduct(product, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key] !== undefined) {

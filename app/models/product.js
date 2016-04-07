@@ -9,7 +9,7 @@ export default DS.Model.extend({
   recommendedProducts: DS.attr('string'),
   bundle: DS.belongsTo('bundle', {async: true}),
   shoppingCart: Ember.inject.service(),
-  // inCart: Ember.computed('shoppingCart.items.[]', function() {
-  //   return this.get('shoppingCart').includes(this);
-  // })
+  inCart: Ember.computed('shoppingCart.items.[]', function() {
+    return this.get('shoppingCart').includes(this);
+  })
 });
