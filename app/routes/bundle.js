@@ -7,9 +7,7 @@ export default Ember.Route.extend({
   actions: {
     saveProduct(params) {
       var newProduct = this.store.createRecord('product', params);
-      console.log(params);
       var bundle = params.bundle;
-      console.log(bundle);
       bundle.get('products').addObject(newProduct);
       newProduct.save().then(function() {
         return bundle.save();

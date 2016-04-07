@@ -7,5 +7,9 @@ export default DS.Model.extend({
   productImage: DS.attr('string'),
   mediaType: DS.attr('string'),
   recommendedProducts: DS.attr('string'),
-  bundle: DS.belongsTo('bundle', {async: true})
+  bundle: DS.belongsTo('bundle', {async: true}),
+  shoppingCart: Ember.inject.service(),
+  // inCart: Ember.computed('shoppingCart.items.[]', function() {
+  //   return this.get('shoppingCart').includes(this);
+  // })
 });

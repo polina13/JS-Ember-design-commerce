@@ -13,5 +13,6 @@
   </div>
   <button class= "btn btn-danger"{{action 'deleteProduct' product}}>Delete</button>
     {{update-product updateProduct="updateProduct" product=product}}
+    <button {{action 'addToCart' product}}>Add to cart</button>
   {{#link-to 'product' product.product.id}} Back {{/link-to}}
 </div>
