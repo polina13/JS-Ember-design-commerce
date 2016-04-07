@@ -1,1 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
 
+.jumbotron {
+  height: 1000px;
+  margin-top: -20px;
+  background: url("http://a5.files.theultralinx.com/image/upload/c_fit,cs_srgb,dpr_1.0,h_1200,q_80,w_1200/MTI5MDI0NTcwMDMxMTU1ODQz.jpg") no-repeat fixed center;
+  background-size: 100% 100%;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 30%;
+  color: #fff;
+  font-family: 'Arvo', serif;
+}
+
+.navbar {
+  font-family: 'Arvo', serif;
+  font-size: 1.5em;
+}
+
+.navbar-brand {
+  font-size: 1.75em;
+}
+
+.btn-heading {
+  padding: 1% 3%;
+  border-radius: 0;
+  font-size: 1.25em;
+  margin-top: 2.5%;
+}
+
+.btn-heading a {
+  color: #fff;
+}
+
+.content {
+  height: 500px;
+  margin-top: -30px;
+}
+
+.content-text {
+  width: 40%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.content-image {
+  margin-right: 5%;
+}
+
+.logo-image {
+  margin-top: 15%;
+  margin-left: 5%;
+  padding-bottom: 5%;
+}
+
+.logo-text {
+  width: 40%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+.btn-bundle {
+  text-transform: uppercase;
+  margin-bottom: 1%;
+  font-size: 1.5em;
+}
+
+.bundle-image {
+  height: 50%;
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 80%;
+}
+
+.btn {
+ border-radius: 0;
+}
+
+.well {
+  height: 100%;
+}
+
+.btn-new {
+  height: 80px;
+  font-weight: 600;
+  font-size: 1.8em;
+}
+
+.btn-new:hover {
+  background-color: #423490;
+}
